@@ -1,6 +1,7 @@
 from customtkinter import *
 from PIL import Image
 import os
+i = 0
 
 set_appearance_mode('dark')
 set_default_color_theme('blue')
@@ -8,9 +9,14 @@ set_default_color_theme('blue')
 def start():
 	def login():
 		Start.destroy()
-		login = CTk()
-		login.attributes('-fullscreen', True)
-		login.mainloop()
+		Login_Window = CTk()
+		Login_Window.title("Login")
+		btn3 = CTkButton(Login_Window, text = "Login as admin",fg_color="transparent",text_color=("gray10", "#DCE4EE"),border_width = 2, border_color = "blue",corner_radius = 12, command = gotosignup)
+		btn3.place(x = 566, y = 330)
+		btn4 = CTkButton(Login_Window, text = "Login as user",fg_color="transparent",text_color=("gray10", "#DCE4EE"),border_width = 2, border_color = "blue",corner_radius = 12, command = gotosignup)
+		btn4.place(x = 566, y = 370)
+		Login_Window.attributes('-fullscreen', True)
+		Login_Window.mainloop()
 	def signup():
 		Start.destroy()
 		Signup = CTk()
@@ -31,7 +37,6 @@ def start():
 		btn2.place(x = 566, y = 520)
 		Signup.attributes('-fullscreen', True)
 		Signup.mainloop()
-
 	Start = CTk()
 	Start.title("Discounter")
 	label1 = CTkLabel(Start, text = "Welcome to this online Discounter Project", font = ("Times", 36)).pack()
