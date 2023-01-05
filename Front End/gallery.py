@@ -11,5 +11,6 @@ img = CTkImage(light_image = Image.open("C:/Users/Saatwik Coding/Desktop/GitHub/
 			   size = (300, 150)
 	)
 lbl = CTkLabel(showroom, image = img, text = "").pack()
-btn = CTkButton(showroom, text = "Apply Promo", fg_color = "transparent").pack()
+btn = CTkButton(showroom, text = "Apply Promo", fg_color = "transparent", border_color = "cyan", border_width = 3).pack()
+showroom.attributes('-fullscreen', True)
 showroom.mainloop()
