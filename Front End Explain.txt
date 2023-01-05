@@ -1,0 +1,17 @@
+This code is in few modules
+
+1) Landing Page
+2) Sign Up
+3) Log In
+4) Gallery
+5) Promo
+
+Landing page is the place which appears to the user just after opening the main file
+
+Sign Up allows you to create an account
+
+Log In allows you to access that account
+
+Gallery allows you to see all the products available
+
+Promo allows you to enter and verify promo codes you want to apply
